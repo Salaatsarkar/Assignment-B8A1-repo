@@ -49,3 +49,25 @@ const getPopularCourses = (courses, minStudents) => {
 const pluckValues = (items, key) => {
     return items.map(item => item[key]);
 };
+class Employee {
+    name;
+    _baseSalary;
+    constructor(name, _baseSalary) {
+        this.name = name;
+        this._baseSalary = _baseSalary;
+    }
+    getDetails() {
+        return JSON.stringify(`Employee: ${this.name}, Base Salary: ${this._baseSalary}`);
+    }
+}
+class Manager extends Employee {
+    department;
+    constructor(name, _baseSalary, department) {
+        super(name, _baseSalary);
+        this.department = department;
+        this.department = department;
+    }
+    getRoleInfo() {
+        return JSON.stringify(`Manager of ${this.department}: ${this.name}`);
+    }
+}
