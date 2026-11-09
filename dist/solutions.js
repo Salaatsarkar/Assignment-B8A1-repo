@@ -46,3 +46,6 @@ const getPopularCourses = (courses, minStudents) => {
     }
     return getCourse;
 };
+const pluckValues = (items, key) => {
+    return items.map(item => item[key]);
+};
