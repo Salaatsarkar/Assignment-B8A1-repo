@@ -37,3 +37,12 @@ const formatCoordinate = (location) => {
 const concatenateArrays = (...arrays) => {
     return arrays.flat();
 };
+const getPopularCourses = (courses, minStudents) => {
+    const getCourse = [];
+    for (const course of courses) {
+        if (course.isPublished && course.students >= minStudents) {
+            getCourse.push(course);
+        }
+    }
+    return getCourse;
+};
