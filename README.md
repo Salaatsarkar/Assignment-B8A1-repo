@@ -33,5 +33,6 @@ I used `Promise<string>`, `resolve`, `reject`, and `setTimeout()` to check age a
 Conclusion :This assignment helped me understand TypeScript concepts. It improved my confidence and problem-solving skills.
 
 [Type-Narrowing](./Type-Narrowing.md)
+
 [Type_alias_vs_Interface](./Type_alias_vs_Interface.md)
 
