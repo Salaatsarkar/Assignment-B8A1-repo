@@ -14,6 +14,9 @@ const multiplyValue = (value : number, multiplier?: number) : number =>{
 
 
 
+
+
+
 type Value = string | number | boolean
 
 const processInput = (value : Value) : Value =>{
@@ -40,6 +43,9 @@ const processInput = (value : Value) : Value =>{
 
 
 
+
+
+
 type TupleLocation = readonly [number, number, string];
 
 const formatCoordinate = (location :  TupleLocation) : string  =>{
@@ -52,11 +58,17 @@ const formatCoordinate = (location :  TupleLocation) : string  =>{
 
 
 
+
+
+
+
 const concatenateArrays = <T> (...arrays: T[][]) : T[] =>{
 
      return arrays.flat() ;
    
 }
+
+
 
 
 
@@ -86,10 +98,18 @@ const getPopularCourses = (courses : Course[] , minStudents : number) : Course[]
 
 
 
+
+
+
 const pluckValues = <T, K extends keyof T> ( items: T[], key: K ) : T[K][] =>{
     return items.map(item => item[key]);
 
 }
+
+
+
+
+
 
 
 class Employee {
@@ -121,6 +141,11 @@ class Manager extends Employee{
     }
 
 }
+
+
+
+
+
 
 
 

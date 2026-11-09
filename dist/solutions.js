@@ -82,5 +82,4 @@ const validateAgeAsync = async (age) => {
         }
     });
 };
-await validateAgeAsync(15).then(console.log).catch(error => console.log(error.message));
 export {};
