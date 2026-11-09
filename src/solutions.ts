@@ -21,7 +21,7 @@ const processInput = (value : Value) : Value =>{
         return JSON.stringify(value.trim().toLowerCase());
     }
     else if (typeof value === 'number'){
-        return value * 10;
+        return Math.abs(value * 10);
     }
     else if(typeof value === 'boolean'){
         if( value){
@@ -36,6 +36,20 @@ const processInput = (value : Value) : Value =>{
         return neverValue;
     }
 }
+
+
+
+
+type TupleLocation = readonly [number, number, string];
+
+const formatCoordinate = (location :  TupleLocation) : string  =>{
+
+    const [latitude, longitude, locationName] = location;
+
+    return JSON.stringify(`Location: ${locationName} (${latitude}, ${longitude})`);
+
+}
+
 
 
 

@@ -15,7 +15,7 @@ const processInput = (value) => {
         return JSON.stringify(value.trim().toLowerCase());
     }
     else if (typeof value === 'number') {
-        return value * 10;
+        return Math.abs(value * 10);
     }
     else if (typeof value === 'boolean') {
         if (value) {
@@ -30,7 +30,9 @@ const processInput = (value) => {
         return neverValue;
     }
 };
-console.log(processInput("  TypeScript  "));
-console.log(processInput(20));
-console.log(processInput(true));
-console.log(processInput(false));
+const formatCoordinate = (location) => {
+    const [latitude, longitude, locationName] = location;
+    return JSON.stringify(`Location: ${locationName} (${latitude}, ${longitude})`);
+};
+console.log(formatCoordinate([23.81, 90.41, "Dhaka"]));
+console.log(formatCoordinate([22.35, 91.78, "Chittagong"]));
