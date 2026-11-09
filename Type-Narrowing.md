@@ -38,8 +38,9 @@ const car = {
     brand: "Toyota",
     color: "Black"
 };
-```
 console.log("brand" in car);
+```
+
 
 Conclusion : Type Narrowing is a useful feature in TypeScript. It helps us check the actual type of a value. By using typeof, instanceof, and the in operator, we can easily work with different types of data. It makes our code easier to understand and helps us avoid type errors.
 
