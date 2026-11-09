@@ -52,6 +52,9 @@ const formatCoordinate = (location :  TupleLocation) : string  =>{
 
 
 
+const concatenateArrays = <T> (...arrays: T[][]) : T[] =>{
 
-
+     return arrays.flat() ;
+   
+}
 
